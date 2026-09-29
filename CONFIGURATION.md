@@ -71,8 +71,9 @@ camera with a tall or unusual native aspect ratio.
 ## Local paths and platform differences
 
 The example uses the Homebrew FFmpeg path on Apple silicon macOS. On another
-Mac, change `ffmpeg` to the result of `command -v ffmpeg`. Relative `cache_dir`
-paths are resolved from the service directory.
+platform, change `ffmpeg` to the path returned by `command -v ffmpeg` and adapt
+the timestamp renderer and service startup method as needed. Relative
+`cache_dir` paths are resolved from the service directory.
 
 Do not copy the live `config.json` into a public repository. It may contain
 private hostnames, ports, or stream identifiers.
