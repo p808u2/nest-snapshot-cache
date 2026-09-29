@@ -3,6 +3,9 @@
 This project does not currently use third-party Python packages. The Python
 service uses the standard library only.
 
+For installation commands, see [`INSTALL-MACOS.md`](INSTALL-MACOS.md). For
+configuration and Scrypted URL guidance, see [`CONFIGURATION.md`](CONFIGURATION.md).
+
 ## Application code
 
 | Component | Role | Source |

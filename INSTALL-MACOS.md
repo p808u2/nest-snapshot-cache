@@ -46,6 +46,16 @@ The timestamp helper is currently macOS-specific and must be compiled once:
 clang -fobjc-arc -framework AppKit timestamp-overlay.m -o timestamp-overlay
 ```
 
+Create the completed plist from the public template. The example file
+[`com.example.nest-snapshot-cache.plist.example`](com.example.nest-snapshot-cache.plist.example)
+shows what the finished result should look like; do not copy its fictional
+paths literally.
+
+```sh
+cp com.example.nest-snapshot-cache.plist.template \
+  com.example.nest-snapshot-cache.plist
+```
+
 ## 2. Create the launchd service
 
 Copy `com.example.nest-snapshot-cache.plist.template` and replace these
@@ -83,6 +93,9 @@ http://127.0.0.1:18765/back.jpg
 ```
 
 The service and Scrypted must run on the same Mac for `127.0.0.1` to work.
+
+For the configuration field-by-field explanation, see
+[`CONFIGURATION.md`](CONFIGURATION.md).
 
 ## Removal
 

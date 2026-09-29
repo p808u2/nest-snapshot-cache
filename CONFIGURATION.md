@@ -1,5 +1,9 @@
 # Configuration guide
 
+For a complete macOS service installation, see
+[`INSTALL-MACOS.md`](INSTALL-MACOS.md). For required tools and runtime
+dependencies, see [`SBOM.md`](SBOM.md).
+
 Start with the generic template:
 
 ```sh

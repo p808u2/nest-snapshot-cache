@@ -44,6 +44,10 @@ snapshots and can trigger the normal background refresh when a cache is stale.
 
 ## Deployment and automatic startup
 
+The public, device-independent setup is documented in
+[`INSTALL-MACOS.md`](INSTALL-MACOS.md). The details below describe the original
+personal deployment and are included for recovery/reference only.
+
 Both Scrypted and this snapshot HTTP service are installed as system
 LaunchDaemons with RunAtLoad and KeepAlive. They start independently of a
 desktop login after macOS boots and are relaunched if they exit. See
@@ -115,6 +119,10 @@ defect and may occasionally reject legitimate repetitive scenes.
 
 See `DEVELOPER-NOTES.md` for the reusable design idea and possible Scrypted
 plugin improvements suggested by this prototype.
+
+For repository maintenance and privacy guidance, see
+[`PUBLISHING.md`](PUBLISHING.md). The dependency inventory is in
+[`SBOM.md`](SBOM.md).
 
 ## Choosing a crop visually
 

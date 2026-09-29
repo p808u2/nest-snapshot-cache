@@ -1,5 +1,9 @@
 # First-publication checklist
 
+The public installation path is [`INSTALL-MACOS.md`](INSTALL-MACOS.md), and the
+dependency inventory is [`SBOM.md`](SBOM.md). Keep those files platform-generic
+and keep the original machine-specific deployment files private.
+
 This repository is a personal, working prototype and companion service for
 Scrypted. It is not an official Scrypted plugin and does not include Nest or
 Google credentials.
