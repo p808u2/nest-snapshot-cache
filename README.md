@@ -48,11 +48,11 @@ The public, device-independent setup is documented in
 [`INSTALL-MACOS.md`](INSTALL-MACOS.md). The details below describe the original
 personal deployment and are included for recovery/reference only.
 
-Both Scrypted and this snapshot HTTP service are installed as system
-LaunchDaemons with RunAtLoad and KeepAlive. They start independently of a
-desktop login after macOS boots and are relaunched if they exit. See
-`BOOT-RECOVERY.md` for verified deployment details and the remaining FileVault
-cold-boot unlock requirement. No browser window needs to remain open.
+Both Scrypted and this snapshot HTTP service can be installed as system
+LaunchDaemons with RunAtLoad and KeepAlive. They can start independently of a
+desktop login after macOS boots and be relaunched if they exit. See
+[`INSTALL-MACOS.md`](INSTALL-MACOS.md) for the public setup path. No browser
+window needs to remain open.
 
 The timestamp renderer is deployed at `timestamp-overlay` and invoked for each
 capture. Rebuild after edits with:
