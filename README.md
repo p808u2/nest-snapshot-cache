@@ -2,10 +2,10 @@
 
 > **Platform note:** This is a macOS-first companion service for Scrypted and
 > Apple Home. The current deployment is tested on an Apple silicon Mac running
-> Scrypted. The Python/FFmpeg snapshot pipeline should be adaptable to Linux or
-> Raspberry Pi, but those platforms are not yet packaged or tested.
+> Scrypted. The Python/FFmpeg snapshot pipeline may be adaptable to other
+> platforms, but those platforms are not yet packaged or tested.
 
-Author: `psmarie`  
+Author: Philippe Sainte-Marie (`p808u2`)  
 Project type: personal research and working prototype  
 Development assistance: OpenAI Codex
 
@@ -103,9 +103,6 @@ defect and may occasionally reject legitimate repetitive scenes.
    its next boot launch. Keep the project and cached images until rollback is verified.
 5. See `BOOT-RECOVERY.md` if restoring login-based startup instead of removing
    the snapshot service. Scrypted's separate boot service need not be removed.
-
-Both Raspberry Pis are outside this service; the M4 Mac mini handles both
-doorbell snapshot caches.
 
 See `DEVELOPER-NOTES.md` for the reusable design idea and possible Scrypted
 plugin improvements suggested by this prototype.

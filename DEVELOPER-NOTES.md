@@ -80,7 +80,6 @@ new cloud stream would lose the latency and reliability benefits.
 - Two wired Google Nest doorbells exposed to Apple Home through Scrypted
 - Scrypted and the cache service run on an M4 Mac mini
 - No continuous Scrypted prebuffer
-- No Raspberry Pi involvement
 - Localhost-only snapshot and health endpoints
 
 This is a working proof of concept rather than a general-purpose plugin. A
