@@ -30,6 +30,10 @@ Configuration examples and instructions are in [`CONFIGURATION.md`](CONFIGURATIO
 The repository includes both a generic template and a fully filled fictional
 example; neither contains a real camera URL.
 
+For a clean macOS installation, see [`INSTALL-MACOS.md`](INSTALL-MACOS.md).
+The repository includes a generic launchd template; the original machine-
+specific migration files are intentionally not published.
+
 Endpoint verification: `/opt/homebrew/bin/python3 verify.py`. This requests
 snapshots and can trigger the normal background refresh when a cache is stale.
 

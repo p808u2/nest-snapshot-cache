@@ -11,9 +11,9 @@ Before creating the first public repository:
 2. Copy `config.example.json` to `config.json` locally and fill in the actual
    Scrypted RTSP URLs. Never commit `config.json`.
 3. Treat `com.pixelo.nest-snapshot-cache.plist` and
-   `install-boot-services.py` as macOS deployment references. They contain
-   machine-specific paths and should be generalized before presenting them as
-   an installer.
+   `install-boot-services.py` as private macOS deployment files. The public
+   package uses `com.example.nest-snapshot-cache.plist.template` and
+   `INSTALL-MACOS.md` instead.
 4. Test from a clean copy using only the documented example configuration.
 5. Publish the repository as `nest-snapshot-cache` with the MIT license.
 6. Add a link to the repository in Scrypted Discussion #2154 as a follow-up.
