@@ -169,14 +169,15 @@ the hourly fallback and which one was refreshed moments ago.
 
 ### Home camera mosaic
 
-![Normalized Nest snapshots in the Apple Home camera mosaic](docs/apple-home-camera-mosaic.jpg)
+![Normalized Nest snapshots in the Apple Home camera mosaic](docs/apple-home-camera-mosaic-myq-blurred.png)
 
 This is the layout that matters most in day-to-day use. Apple Home may crop the
 images again inside the mosaic, so the crop should be judged here as well as in
 the standalone JPEG. The front door remains readable even though its native
 feed is taller, while the back door keeps the patio and driveway in view.
 
-The repository also includes failure examples from the original setup for
+The mosaic example intentionally blurs the unrelated MyQ/garage tile. The
+repository also includes failure examples from the original setup for
 comparison: `Snapshot Failed`, stale tiles, portrait fallback blur, and severe
 vertical banding. Those examples explain why the last-good cache and quality
 rejection checks are useful.
