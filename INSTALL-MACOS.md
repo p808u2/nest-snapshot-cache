@@ -3,6 +3,26 @@
 This is the documented manual installation path for the snapshot service. It
 does not migrate, modify, or replace an existing Scrypted installation.
 
+## Prerequisites
+
+Install or verify the required tools before configuring the service:
+
+```sh
+python3 --version
+ffmpeg -version
+xcode-select -p
+```
+
+If a command is missing:
+
+- Install Python 3.10 or newer using your preferred macOS package method.
+- Install FFmpeg from [ffmpeg.org](https://ffmpeg.org/) or with Homebrew:
+  `brew install ffmpeg`.
+- Install Apple Command Line Tools with `xcode-select --install`.
+
+The complete dependency inventory is in [`SBOM.md`](SBOM.md). No Python
+packages need to be installed with pip.
+
 ## 1. Prepare the project
 
 ```sh

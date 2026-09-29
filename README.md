@@ -34,6 +34,11 @@ For a clean macOS installation, see [`INSTALL-MACOS.md`](INSTALL-MACOS.md).
 The repository includes a generic launchd template; the original machine-
 specific migration files are intentionally not published.
 
+The fictional completed launchd example is
+[`com.example.nest-snapshot-cache.plist.example`](com.example.nest-snapshot-cache.plist.example).
+Prerequisites and the dependency inventory are documented in
+[`SBOM.md`](SBOM.md).
+
 Endpoint verification: `/opt/homebrew/bin/python3 verify.py`. This requests
 snapshots and can trigger the normal background refresh when a cache is stale.
 
