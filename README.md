@@ -198,3 +198,13 @@ repository also includes failure examples from the original setup for
 comparison: `Snapshot Failed`, stale tiles, portrait fallback blur, and severe
 vertical banding. Those examples explain why the last-good cache and quality
 rejection checks are useful.
+
+## Limitations
+
+- The documented deployment is macOS-first and tested on an Apple silicon Mac.
+- Linux and Raspberry Pi installations are not currently packaged or tested.
+- The timestamp renderer currently uses macOS AppKit.
+- The service expects Scrypted to provide a local RTSP rebroadcast URL.
+- This is a companion service, not an official Scrypted plugin.
+- The timestamp represents local frame receipt time, not the camera's authoritative exposure time.
+- The quality check is intentionally conservative and cannot detect every possible image defect.
