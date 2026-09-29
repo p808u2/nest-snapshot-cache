@@ -1,0 +1,28 @@
+{
+  "host": "127.0.0.1",
+  "port": 18765,
+  "ffmpeg": "/opt/homebrew/bin/ffmpeg",
+  "cache_dir": "./cache",
+  "cameras": {
+    "front": {
+      "source": "rtsp://localhost:SCRYPTED_PORT/STREAM_ID",
+      "fresh_for_seconds": 300,
+      "refresh_cooldown_seconds": 120,
+      "capture_timeout_seconds": 30,
+      "first_request_wait_seconds": 8,
+      "output_width": 1280,
+      "output_height": 720,
+      "crop_vertical_bias": 0.65
+    },
+    "back": {
+      "source": "rtsp://localhost:SCRYPTED_PORT/STREAM_ID",
+      "fresh_for_seconds": 300,
+      "refresh_cooldown_seconds": 120,
+      "capture_timeout_seconds": 30,
+      "first_request_wait_seconds": 8,
+      "output_width": 1280,
+      "output_height": 720,
+      "crop_vertical_bias": 0.50
+    }
+  }
+}

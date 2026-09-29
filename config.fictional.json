@@ -1,0 +1,37 @@
+{
+  "host": "127.0.0.1",
+  "port": 18765,
+  "ffmpeg": "/opt/homebrew/bin/ffmpeg",
+  "cache_dir": "./cache",
+  "schedule": {
+    "enabled": true,
+    "hourly": true,
+    "timezone": "America/Detroit",
+    "latitude": 42.3314,
+    "longitude": -83.0458
+  },
+  "cameras": {
+    "front": {
+      "source": "rtsp://127.0.0.1:11000/7f3c9a2e5d184b6aa91e0c4f",
+      "fresh_for_seconds": 300,
+      "refresh_cooldown_seconds": 120,
+      "capture_timeout_seconds": 30,
+      "first_request_wait_seconds": 8,
+      "output_width": 1280,
+      "output_height": 720,
+      "crop_vertical_bias": 0.65,
+      "timestamp_overlay": true
+    },
+    "back": {
+      "source": "rtsp://127.0.0.1:11001/c28d6140b7e94a1f83d5e902",
+      "fresh_for_seconds": 300,
+      "refresh_cooldown_seconds": 120,
+      "capture_timeout_seconds": 30,
+      "first_request_wait_seconds": 8,
+      "output_width": 1280,
+      "output_height": 720,
+      "crop_vertical_bias": 0.50,
+      "timestamp_overlay": true
+    }
+  }
+}

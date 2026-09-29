@@ -1,0 +1,10 @@
+cache/
+config.json
+service.log
+__pycache__/
+*.pyc
+timestamp-overlay
+*.tmp
+# Local macOS deployment files contain machine-specific paths.
+com.pixelo.nest-snapshot-cache.plist
+install-boot-services.py
