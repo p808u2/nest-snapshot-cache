@@ -7,6 +7,7 @@ import json
 import logging
 import math
 import os
+import re
 import signal
 import subprocess
 import threading
@@ -22,6 +23,13 @@ from quality import check_pixels
 ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = Path(os.environ.get("NEST_SNAPSHOT_CONFIG", ROOT / "config.json"))
 LOG = logging.getLogger("nest-snapshot-cache")
+
+
+def public_error(message: str | None) -> str | None:
+    """Remove private stream addresses before returning errors over HTTP."""
+    if not message:
+        return message
+    return re.sub(r"(?i)\brtsps?://\S+", "rtsp://[redacted]", message)
 
 
 class Camera:
@@ -177,7 +185,7 @@ class Camera:
             "cached": cached is not None,
             "cache_age_seconds": round(time.time() - self.last_success, 1) if self.last_success else None,
             "refreshing": bool(self.in_flight and self.in_flight.is_alive()),
-            "last_error": self.last_error,
+            "last_error": public_error(self.last_error),
             "output_size": f"{self.output_width}x{self.output_height}",
             "crop_vertical_bias": self.crop_vertical_bias,
             "timestamp_overlay": self.timestamp_overlay,
